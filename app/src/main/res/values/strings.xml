@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">AppNativa</string>
+
+    <string name="btn_pagina_institucional">Pagina Institucional</string>
+    <string name="btn_buscar_paginas">Buscar paginas</string>
+    <string name="btn_mensajes">Formulario</string>
+
+    <string name="descripcion">pagina institucional UMB</string>
+
+</resources>
