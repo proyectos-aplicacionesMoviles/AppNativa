@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MenuActivity" >
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+
+        </LinearLayout>
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:textAlignment="center">
+
+            <TextView
+                android:id="@+id/textView9"
+                android:layout_width="150dp"
+                android:layout_height="70dp"
+                android:text="Menú"
+                android:textColor="@color/black"
+                android:textAlignment="center"
+                android:textSize="34dp" />
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/paginaInstitucional"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:text="pagina institucional UBM" />
+
+                        <ImageView
+                            android:id="@+id/imageView2"
+                            android:layout_width="84dp"
+                            android:layout_height="80dp"
+                            android:layout_gravity="center"
+                            app:srcCompat="@drawable/umb" />
+
+                        <Button
+                            android:id="@+id/btnPaginaInstitucional"
+                            style="@style/Widget.AppCompat.Button.Colored"
+                            android:layout_width="220dp"
+                            android:layout_height="wrap_content"
+                            android:onClick="irPaginaInstitucional"
+                            android:text="@string/btn_pagina_institucional" />
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/buscarPaginas"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:text="@string/btn_buscar_paginas" />
+
+                        <ImageView
+                            android:id="@+id/imageView3"
+                            android:layout_width="74dp"
+                            android:layout_height="80dp"
+                            app:srcCompat="@drawable/buscar" />
+
+                        <Button
+                            android:id="@+id/btnBuscarPaginas"
+                            android:layout_width="213dp"
+                            android:layout_height="wrap_content"
+                            android:onClick="irBuscador"
+                            android:text="Buscar paginas" />
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/mensajes"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:text="Formulario de registro" />
+
+                        <ImageView
+                            android:id="@+id/imageView8"
+                            android:layout_width="80dp"
+                            android:layout_height="80dp"
+                            app:srcCompat="@drawable/form2" />
+
+                        <Button
+                            android:id="@+id/btnFormulario"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:onClick="irFormulario"
+                            android:text="@string/btn_mensajes" />
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+            </TableRow>
+
+        </TableLayout>
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
